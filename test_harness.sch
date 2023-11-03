@@ -21,8 +21,6 @@ N -140 -140 -140 -110 {
 lab=#net5}
 N -140 -110 -110 -110 {
 lab=#net5}
-N -240 -80 -220 -80 {
-lab=#net6}
 N -220 -110 -220 -80 {
 lab=#net6}
 N -220 -110 -190 -110 {
@@ -127,23 +125,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} -270 -80 0 1 {name=M4
-L=0.15
-W=1
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {madvlsi/gnd.sym} -270 -50 0 0 {name=l10 lab=GND}
 C {madvlsi/gnd.sym} -190 -50 0 0 {name=l11 lab=GND}
 C {madvlsi/vdd.sym} -190 -170 0 0 {name=l12 lab=VDD}
 C {madvlsi/vdd.sym} -110 -170 0 0 {name=l13 lab=VDD}
-C {/home/madvlsi/Documents/R2R-DAC/ladder_7bit.sym} 0 0 0 0 {name=x1}
+C {./ladder_7bit.sym} 0 0 0 0 {name=x1}
