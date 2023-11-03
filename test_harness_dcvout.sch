@@ -15,11 +15,9 @@ N 210 40 230 40 {
 lab=#net1}
 N 170 40 200 40 {
 lab=#net3}
-N -160 -140 -140 -140 {
+N -160 -180 -140 -180 {
 lab=#net4}
-N -110 -110 -110 -80 {
-lab=#net5}
-N -50 -80 -0 -80 {
+N -110 -150 -110 -80 {
 lab=#net5}
 N -220 -80 -130 -80 {
 lab=#net6}
@@ -33,20 +31,32 @@ N -110 -80 -50 -80 {
 lab=#net5}
 N -260 -80 -220 -80 {
 lab=#net6}
-N -350 -180 -350 -160 {
+N -350 -220 -350 -200 {
 lab=GND}
-N -350 -180 -290 -180 {
+N -350 -220 -290 -220 {
 lab=GND}
-N -290 -180 -290 -170 {
+N -290 -220 -290 -210 {
 lab=GND}
-N -290 -110 -260 -110 {
-lab=#net6}
-N -260 -110 -260 -80 {
-lab=#net6}
-N -190 -110 -150 -110 {
+N -190 -150 -150 -150 {
 lab=#net4}
-N -150 -140 -150 -110 {
+N -150 -180 -150 -150 {
 lab=#net4}
+N -50 -80 -30 -80 {
+lab=#net5}
+N -20 -80 0 -80 {
+lab=#net7}
+N -240 -130 -240 -80 {
+lab=#net6}
+N -290 -150 -290 -120 {
+lab=#net6}
+N -290 -140 -240 -140 {
+lab=#net6}
+N -240 -140 -240 -130 {
+lab=#net6}
+N -190 -150 -190 -120 {
+lab=#net4}
+N -290 -120 -290 -110 {
+lab=#net6}
 C {madvlsi/vsource.sym} 280 220 0 0 {name=Vb0
 value=0}
 C {madvlsi/gnd.sym} 280 250 0 0 {name=l1 lab=GND}
@@ -87,9 +97,9 @@ value=1}
 C {madvlsi/gnd.sym} 300 10 0 0 {name=l8 lab=GND}
 C {madvlsi/ammeter1.sym} 200 -50 3 0 {name=Vout_amm}
 C {madvlsi/ammeter1.sym} 200 40 3 0 {name=Vdump_amm}
-C {madvlsi/isource.sym} -290 -140 0 0 {name=Iref
-value=1u}
-C {madvlsi/pmos3.sym} -110 -140 0 0 {name=M1
+C {madvlsi/isource.sym} -290 -180 0 1 {name=Iref
+value=1n}
+C {madvlsi/pmos3.sym} -110 -180 0 0 {name=M1
 L=0.15
 W=1
 body=VDD
@@ -104,7 +114,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/pmos3.sym} -190 -140 0 1 {name=M2
+C {madvlsi/pmos3.sym} -190 -180 0 1 {name=M2
 L=0.15
 W=1
 body=VDD
@@ -135,13 +145,13 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/gnd.sym} -190 -50 0 0 {name=l11 lab=GND}
-C {madvlsi/vdd.sym} -190 -170 0 0 {name=l12 lab=VDD}
-C {madvlsi/vdd.sym} -110 -170 0 0 {name=l13 lab=VDD}
+C {madvlsi/vdd.sym} -190 -210 0 0 {name=l12 lab=VDD}
+C {madvlsi/vdd.sym} -110 -210 0 0 {name=l13 lab=VDD}
 C {./ladder_7bit.sym} 0 0 0 0 {name=x1}
 C {devices/code_shown.sym} 400 140 0 0 {name=SPICE1 only_toplevel=false value="
 .control
    dc Vout 0 1.8 0.01 
-   plot i(Vout_amm) i(Vdump_amm)
+   plot i(Vout_amm) i(Vdump_amm) i(Vin_amm) i(Vin_amm1)
 .endc"}
 C {madvlsi/tt_models.sym} 420 -260 0 0 {
 name=TT_MODELS
@@ -166,4 +176,6 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/gnd.sym} -290 -50 0 0 {name=l9 lab=GND}
-C {madvlsi/gnd.sym} -350 -160 0 0 {name=l10 lab=GND}
+C {madvlsi/gnd.sym} -350 -200 0 0 {name=l10 lab=GND}
+C {madvlsi/ammeter1.sym} -30 -80 3 0 {name=Vin_amm}
+C {madvlsi/ammeter1.sym} -190 -120 0 0 {name=Vin_amm1}
