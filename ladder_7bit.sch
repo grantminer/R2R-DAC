@@ -16,9 +16,9 @@ lab=#net1}
 N 80 80 110 80 {
 lab=#net1}
 N 40 80 60 80 {
-lab=b7}
+lab=b6}
 N 40 80 40 240 {
-lab=b7}
+lab=b6}
 N 260 80 260 240 {
 lab=#net2}
 N 230 80 260 80 {
@@ -119,13 +119,6 @@ N 1110 0 1110 150 {
 lab=Idump}
 N -50 0 -0 0 {
 lab=Iin}
-C {/home/madvlsi/R2R-DAC/ladder_1bit.sym} -30 110 0 0 {name=x1}
-C {/home/madvlsi/R2R-DAC/ladder_1bit.sym} 120 110 0 0 {name=x2}
-C {/home/madvlsi/R2R-DAC/ladder_1bit.sym} 270 110 0 0 {name=x3}
-C {/home/madvlsi/R2R-DAC/ladder_1bit.sym} 420 110 0 0 {name=x4}
-C {/home/madvlsi/R2R-DAC/ladder_1bit.sym} 570 110 0 0 {name=x5}
-C {/home/madvlsi/R2R-DAC/ladder_1bit.sym} 720 110 0 0 {name=x6}
-C {/home/madvlsi/R2R-DAC/ladder_1bit.sym} 870 110 0 0 {name=x7}
 C {madvlsi/nmos3.sym} 1080 0 1 0 {name=M1
 L=0.15
 W=1
@@ -141,25 +134,18 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/madvlsi/Documents/mp1/inverter.sym} 10 240 0 0 {name=X8}
 C {madvlsi/vdd.sym} 70 210 0 0 {name=l3 lab=VDD}
 C {madvlsi/gnd.sym} 70 270 0 0 {name=l1 lab=GND}
-C {/home/madvlsi/Documents/mp1/inverter.sym} 160 240 0 0 {name=X9}
 C {madvlsi/vdd.sym} 220 210 0 0 {name=l2 lab=VDD}
 C {madvlsi/gnd.sym} 220 270 0 0 {name=l4 lab=GND}
-C {/home/madvlsi/Documents/mp1/inverter.sym} 310 240 0 0 {name=X10}
 C {madvlsi/vdd.sym} 370 210 0 0 {name=l5 lab=VDD}
 C {madvlsi/gnd.sym} 370 270 0 0 {name=l6 lab=GND}
-C {/home/madvlsi/Documents/mp1/inverter.sym} 460 240 0 0 {name=X11}
 C {madvlsi/vdd.sym} 520 210 0 0 {name=l7 lab=VDD}
 C {madvlsi/gnd.sym} 520 270 0 0 {name=l8 lab=GND}
-C {/home/madvlsi/Documents/mp1/inverter.sym} 610 240 0 0 {name=X12}
 C {madvlsi/vdd.sym} 670 210 0 0 {name=l9 lab=VDD}
 C {madvlsi/gnd.sym} 670 270 0 0 {name=l10 lab=GND}
-C {/home/madvlsi/Documents/mp1/inverter.sym} 760 240 0 0 {name=X13}
 C {madvlsi/vdd.sym} 820 210 0 0 {name=l11 lab=VDD}
 C {madvlsi/gnd.sym} 820 270 0 0 {name=l12 lab=GND}
-C {/home/madvlsi/Documents/mp1/inverter.sym} 910 240 0 0 {name=X14}
 C {madvlsi/vdd.sym} 970 210 0 0 {name=l13 lab=VDD}
 C {madvlsi/gnd.sym} 970 270 0 0 {name=l14 lab=GND}
 C {devices/opin.sym} 1150 150 0 0 {name=p1 lab=Idump}
@@ -173,3 +159,17 @@ C {devices/ipin.sym} 490 240 3 0 {name=p8 lab=b3}
 C {devices/ipin.sym} 640 240 3 0 {name=p9 lab=b2}
 C {devices/ipin.sym} 790 240 3 0 {name=p10 lab=b1}
 C {devices/ipin.sym} 940 240 3 0 {name=p11 lab=b0}
+C {./ladder_1bit.sym} -30 110 0 0 {name=x1}
+C {./inverter.sym} 30 240 0 0 {name=X8}
+C {./inverter.sym} 180 240 0 0 {name=X9}
+C {./inverter.sym} 330 240 0 0 {name=X10}
+C {./inverter.sym} 480 240 0 0 {name=X11}
+C {./inverter.sym} 630 240 0 0 {name=X12}
+C {./inverter.sym} 780 240 0 0 {name=X13}
+C {./inverter.sym} 930 240 0 0 {name=X14}
+C {./ladder_1bit.sym} 120 110 0 0 {name=x2}
+C {./ladder_1bit.sym} 270 110 0 0 {name=x3}
+C {./ladder_1bit.sym} 420 110 0 0 {name=x4}
+C {./ladder_1bit.sym} 570 110 0 0 {name=x5}
+C {./ladder_1bit.sym} 720 110 0 0 {name=x6}
+C {./ladder_1bit.sym} 870 110 0 0 {name=x7}

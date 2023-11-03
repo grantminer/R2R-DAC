@@ -22,19 +22,21 @@ lab=#net5}
 N -140 -110 -110 -110 {
 lab=#net5}
 N -240 -80 -220 -80 {
-lab=#net5}
+lab=#net6}
 N -220 -110 -220 -80 {
-lab=#net5}
+lab=#net6}
 N -220 -110 -190 -110 {
-lab=#net5}
+lab=#net6}
 N -110 -110 -110 -80 {
 lab=#net5}
 N -50 -80 -0 -80 {
+lab=#net7}
+N -220 -80 -130 -80 {
 lab=#net6}
-N -220 -80 -130 -80 {}
-N -130 -80 -130 -60 {}
-N -130 -60 -0 -60 {}
-C {/home/madvlsi/R2R-DAC/ladder_7bit.sym} 0 0 0 0 {name=x1}
+N -130 -80 -130 -60 {
+lab=#net6}
+N -130 -60 -0 -60 {
+lab=#net6}
 C {madvlsi/vsource.sym} 280 220 0 0 {name=Vb0
 value=0}
 C {madvlsi/gnd.sym} 280 250 0 0 {name=l1 lab=GND}
@@ -144,3 +146,4 @@ C {madvlsi/gnd.sym} -270 -50 0 0 {name=l10 lab=GND}
 C {madvlsi/gnd.sym} -190 -50 0 0 {name=l11 lab=GND}
 C {madvlsi/vdd.sym} -190 -170 0 0 {name=l12 lab=VDD}
 C {madvlsi/vdd.sym} -110 -170 0 0 {name=l13 lab=VDD}
+C {/home/madvlsi/Documents/R2R-DAC/ladder_7bit.sym} 0 0 0 0 {name=x1}
