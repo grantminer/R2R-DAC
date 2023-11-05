@@ -120,8 +120,8 @@ lab=Idump}
 N -50 0 -0 0 {
 lab=Iin}
 C {madvlsi/nmos3.sym} 1080 0 1 0 {name=M1
-L=0.15
-W=1
+L=0.5
+W=12
 body=GND
 nf=1
 mult=1
