@@ -55,7 +55,7 @@ N 420 -70 470 -70 {
 lab=Vg}
 C {madvlsi/nmos3.sym} 80 30 1 0 {name=M2
 L=0.5
-W=12
+W=96
 body=GND
 nf=1
 mult=1
