@@ -101,8 +101,8 @@ C {madvlsi/gnd.sym} 230 100 0 0 {name=l9 lab=GND}
 C {madvlsi/depvsrc.sym} 230 70 0 0 {name=B1
 func=v(Vtap)}
 C {devices/lab_pin.sym} 300 -50 2 0 {name=p15 sig_type=std_logic lab=Vtap}
-C {madvlsi/vsource.sym} -310 130 0 0 {name=V1
+C {madvlsi/vsource.sym} -210 220 0 0 {name=V1
 value=1.8}
-C {madvlsi/gnd.sym} -310 160 0 0 {name=l10 lab=GND}
-C {madvlsi/vdd.sym} -310 100 0 0 {name=l11 lab=VDD}
+C {madvlsi/gnd.sym} -210 250 0 0 {name=l10 lab=GND}
+C {madvlsi/vdd.sym} -210 190 0 0 {name=l11 lab=VDD}
 C {madvlsi/vdd.sym} -140 -60 0 0 {name=l12 lab=VDD}
