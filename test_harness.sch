@@ -18,31 +18,35 @@ lab=#net3}
 N -160 -140 -140 -140 {
 lab=#net4}
 N -110 -110 -110 -80 {
-lab=#net4}
+lab=#net5}
 N -50 -80 -0 -80 {
-lab=#net4}
+lab=#net5}
 N -220 -80 -130 -80 {
-lab=#net5}
+lab=#net6}
 N -130 -80 -130 -60 {
-lab=#net5}
+lab=#net6}
 N -130 -60 -0 -60 {
-lab=#net5}
+lab=#net6}
 N 230 -50 230 40 {
 lab=#net1}
 N -110 -80 -50 -80 {
-lab=#net4}
-N -260 -80 -220 -80 {
 lab=#net5}
+N -260 -80 -220 -80 {
+lab=#net6}
 N -350 -180 -350 -160 {
 lab=GND}
 N -350 -180 -290 -180 {
 lab=GND}
 N -290 -180 -290 -170 {
 lab=GND}
-N -290 -110 -260 -110 {}
-N -260 -110 -260 -80 {}
-N -190 -110 -150 -110 {}
-N -150 -140 -150 -110 {}
+N -290 -110 -260 -110 {
+lab=#net6}
+N -260 -110 -260 -80 {
+lab=#net6}
+N -190 -110 -150 -110 {
+lab=#net4}
+N -150 -140 -150 -110 {
+lab=#net4}
 C {madvlsi/vsource.sym} 280 220 0 0 {name=Vb0
 value=0}
 C {madvlsi/gnd.sym} 280 250 0 0 {name=l1 lab=GND}
@@ -68,7 +72,7 @@ value=0}
 C {madvlsi/gnd.sym} -70 250 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} -70 190 1 0 {name=p6 sig_type=std_logic lab=b5}
 C {madvlsi/vsource.sym} -140 220 0 0 {name=Vb6
-value=1}
+value=1.8}
 C {madvlsi/gnd.sym} -140 250 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} -140 190 1 0 {name=p7 sig_type=std_logic lab=b6}
 C {devices/lab_pin.sym} 0 80 0 0 {name=p8 sig_type=std_logic lab=b0}
@@ -79,7 +83,7 @@ C {devices/lab_pin.sym} 0 0 0 0 {name=p12 sig_type=std_logic lab=b4}
 C {devices/lab_pin.sym} 0 -20 0 0 {name=p13 sig_type=std_logic lab=b5}
 C {devices/lab_pin.sym} 0 -40 0 0 {name=p14 sig_type=std_logic lab=b6}
 C {madvlsi/vsource.sym} 300 -20 0 0 {name=Vout
-value=1}
+value=0}
 C {madvlsi/gnd.sym} 300 10 0 0 {name=l8 lab=GND}
 C {madvlsi/ammeter1.sym} 200 -50 3 0 {name=Vout_amm}
 C {madvlsi/ammeter1.sym} 200 40 3 0 {name=Vdump_amm}
