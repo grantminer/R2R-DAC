@@ -15,27 +15,25 @@ N 210 40 230 40 {
 lab=#net2}
 N 170 40 200 40 {
 lab=#net3}
-N -110 -80 -50 -80 {
-lab=#net4}
 N -50 -80 -30 -80 {
 lab=#net4}
 N -20 -80 0 -80 {
 lab=#net5}
-N -380 -120 -380 -100 {
+N -320 -120 -320 -100 {
 lab=#net6}
-N -380 -120 -340 -120 {
+N -320 -120 -280 -120 {
 lab=#net6}
-N -100 -60 0 -60 {
+N -50 -60 0 -60 {
 lab=VDD}
-N -200 -120 -170 -120 {
-lab=#net7}
-N -160 -120 -140 -120 {
-lab=#net4}
 N -140 -120 -110 -120 {
+lab=#net7}
+N -100 -120 -80 -120 {
 lab=#net4}
-N -110 -120 -110 -80 {
+N -80 -120 -50 -120 {
 lab=#net4}
-N -140 -60 -100 -60 {
+N -50 -120 -50 -80 {
+lab=#net4}
+N -90 -60 -50 -60 {
 lab=VDD}
 C {madvlsi/vsource.sym} 280 220 0 0 {name=Vb0
 value=0}
@@ -78,12 +76,13 @@ C {madvlsi/gnd.sym} 270 10 0 0 {name=l8 lab=GND}
 C {madvlsi/ammeter1.sym} 200 -50 3 0 {name=Vout_amm}
 C {madvlsi/ammeter1.sym} 200 40 3 0 {name=Vdump_amm}
 C {./ladder_7bit.sym} 0 0 0 0 {name=x1}
-C {devices/code_shown.sym} 400 140 0 0 {name=SPICE1 only_toplevel=false value=".control
-   dc Vout 0 1.8 0.01
+C {devices/code_shown.sym} 360 120 0 0 {name=SPICE1 only_toplevel=false value=".dc Vout 0 1.8 0.01
+.save all"
+.control
    plot v(net4)
    plot i(Vin_amm1) i(Vout_amm) i(Vdump_amm) i(Vin_amm)
-.endc"}
-C {madvlsi/tt_models.sym} 420 -260 0 0 {
+.endc}
+C {madvlsi/tt_models.sym} 350 -60 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
@@ -91,12 +90,12 @@ value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {madvlsi/ammeter1.sym} -30 -80 3 0 {name=Vin_amm}
-C {./bias_gen.sym} -360 -80 0 0 {name=x2}
-C {madvlsi/resistor.sym} -380 -70 0 0 {name=R1
+C {./bias_gen.sym} -300 -80 0 0 {name=x2}
+C {madvlsi/resistor.sym} -320 -70 0 0 {name=R1
 value=40k
 m=1}
-C {madvlsi/gnd.sym} -380 -40 0 0 {name=l14 lab=GND}
-C {madvlsi/ammeter1.sym} -170 -120 3 0 {name=Vin_amm1}
+C {madvlsi/gnd.sym} -320 -40 0 0 {name=l14 lab=GND}
+C {madvlsi/ammeter1.sym} -110 -120 3 0 {name=Vin_amm1}
 C {madvlsi/gnd.sym} 230 100 0 0 {name=l9 lab=GND}
 C {madvlsi/depvsrc.sym} 230 70 0 0 {name=B1
 func=v(Vtap)}
@@ -105,4 +104,4 @@ C {madvlsi/vsource.sym} -210 220 0 0 {name=V1
 value=1.8}
 C {madvlsi/gnd.sym} -210 250 0 0 {name=l10 lab=GND}
 C {madvlsi/vdd.sym} -210 190 0 0 {name=l11 lab=VDD}
-C {madvlsi/vdd.sym} -140 -60 0 0 {name=l12 lab=VDD}
+C {madvlsi/vdd.sym} -90 -60 0 0 {name=l12 lab=VDD}

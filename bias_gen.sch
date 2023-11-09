@@ -55,10 +55,10 @@ N 420 -70 470 -70 {
 lab=Vg}
 C {madvlsi/nmos3.sym} 80 30 1 0 {name=M2
 L=4
-W=96
+W=12
 body=GND
 nf=1
-mult=1
+mult=8
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
