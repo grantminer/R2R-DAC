@@ -67,7 +67,7 @@ N 590 -70 590 -40 {
 lab=#net10}
 C {./ladder_7bit.sym} 0 0 0 0 {name=x1}
 C {madvlsi/vdd.sym} 0 -60 3 0 {name=l3 lab=VDD}
-C {madvlsi/ammeter1.sym} 190 -50 3 0 {name=Vmeas_i_out_ladder}
+C {madvlsi/ammeter1.sym} 190 -50 3 0 {name=VI_out_ladder}
 C {madvlsi/vsource.sym} 1410 -150 0 0 {name=Vb0
 value=0}
 C {madvlsi/gnd.sym} 1410 -120 0 0 {name=l2 lab=GND}
@@ -163,7 +163,7 @@ set wr_vecnames
     alter vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/dactut.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(V_i_in) i(Vmeas_i_out_ladder) i(Vmeas_dump) i(Vmeas_i_out)
+    wrdata ~/Documents/dactut.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(V_i_in) i(VI_out_ladder) i(VI_dump) i(VI_out)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -171,7 +171,7 @@ set wr_vecnames
     let code = code + 1
   end
 .endc"}
-C {madvlsi/ammeter1.sym} 190 40 3 0 {name=Vmeas_dump}
+C {madvlsi/ammeter1.sym} 190 40 3 0 {name=VI_dump}
 C {madvlsi/ammeter1.sym} -50 -80 3 0 {name=V_i_in}
 C {./bias_gen.sym} -210 -40 0 0 {name=x2}
 C {madvlsi/resistor.sym} -230 -30 0 0 {name=R1
@@ -182,5 +182,5 @@ C {./output_sink.sym} 510 0 0 0 {name=x3}
 C {madvlsi/vsource.sym} 590 -130 0 0 {name=Vb7
 value=0.5}
 C {madvlsi/vdd.sym} 590 -160 0 0 {name=l1 lab=VDD}
-C {madvlsi/ammeter1.sym} 590 -80 0 0 {name=Vmeas_i_out}
+C {madvlsi/ammeter1.sym} 590 -80 0 0 {name=VI_out}
 C {./bias_current_generator.sym} 40 -170 0 0 {name=x5}
