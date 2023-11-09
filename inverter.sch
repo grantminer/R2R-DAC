@@ -34,8 +34,8 @@ C {devices/iopin.sym} 90 -110 3 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 90 90 1 0 {name=p3 lab=VN}
 C {devices/opin.sym} 160 -10 0 0 {name=p4 lab=Y}
 C {madvlsi/pmos4.sym} 90 -60 0 0 {name=M3
-L=0.15
-W=1
+L=0.5
+W=12
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -48,8 +48,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos4.sym} 90 40 0 0 {name=M4
-L=0.15
-W=1
+L=0.5
+W=12
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
