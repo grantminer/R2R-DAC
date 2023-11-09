@@ -9,7 +9,7 @@ N 170 -50 190 -50 {
 lab=#net1}
 N 200 -50 230 -50 {
 lab=GND}
-C {/home/madvlsi/R2R-DAC/ladder_7bit.sym} 0 0 0 0 {name=x1}
+C {./ladder_7bit.sym} 0 0 0 0 {name=x1}
 C {madvlsi/gnd.sym} 170 40 0 0 {name=l1 lab=GND}
 C {madvlsi/vdd.sym} 0 -60 3 0 {name=l3 lab=VDD}
 C {madvlsi/isource.sym} -30 -80 3 0 {name=I1
