@@ -54,7 +54,7 @@ lab=Ib}
 N 420 -70 470 -70 {
 lab=Vg}
 C {madvlsi/nmos3.sym} 80 30 1 0 {name=M2
-L=0.5
+L=4
 W=96
 body=GND
 nf=1
@@ -69,7 +69,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 160 -100 1 0 {name=M3
-L=0.5
+L=4
 W=12
 body=VDD
 nf=1
@@ -92,7 +92,7 @@ C {devices/ipin.sym} 110 90 3 0 {name=p1 lab=R}
 C {devices/opin.sym} 470 -100 0 0 {name=p2 lab=Ib}
 C {devices/opin.sym} 470 -70 0 0 {name=p3 lab=Vg}
 C {madvlsi/pmos3.sym} 80 -100 3 0 {name=M1
-L=0.5
+L=4
 W=12
 body=VDD
 nf=1
@@ -107,7 +107,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 260 -100 1 0 {name=M4
-L=0.5
+L=4
 W=12
 body=VDD
 nf=1
@@ -122,7 +122,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 340 -100 3 0 {name=M5
-L=0.5
+L=4
 W=12
 body=VDD
 nf=1
@@ -137,7 +137,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 420 -100 3 0 {name=M7
-L=0.5
+L=4
 W=12
 body=VDD
 nf=1
@@ -152,7 +152,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 160 30 1 0 {name=M6
-L=0.5
+L=4
 W=12
 body=GND
 nf=1
@@ -167,7 +167,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 260 30 1 0 {name=M8
-L=0.5
+L=4
 W=12
 body=GND
 nf=1
@@ -182,7 +182,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 340 30 1 0 {name=M9
-L=0.5
+L=4
 W=12
 body=GND
 nf=1

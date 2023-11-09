@@ -50,7 +50,7 @@ lab=#net1}
 N 250 -200 260 -200 {
 lab=#net1}
 C {madvlsi/nmos3.sym} 210 -330 3 0 {name=M5
-L=0.5
+L=4
 W=12
 body=GND
 nf=1
@@ -65,7 +65,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 220 -170 3 0 {name=M6
-L=0.5
+L=4
 W=12
 body=GND
 nf=1
@@ -80,7 +80,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 300 -170 3 0 {name=M7
-L=0.5
+L=4
 W=12
 body=GND
 nf=1
@@ -95,7 +95,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 290 -330 3 0 {name=M8
-L=0.5
+L=4
 W=12
 body=GND
 nf=1
