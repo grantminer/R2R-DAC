@@ -1,0 +1,5 @@
+pandas
+matplotlib
+numpy
+si_prefix
+UliEngineering
