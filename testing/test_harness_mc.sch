@@ -124,7 +124,7 @@ C {devices/code.sym} 160 -140 0 0 {name=SPICE only_toplevel=false value=".contro
       alter vb6 1.8*$&b6
       save all
       op
-      wrdata ~/Documents/R2R-DAC/simulation/mc/mcdac\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(V_i_in) i(VI_out)
+      wrdata ../simulation/mc/mcdac\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(net5) i(V_i_in) i(VI_out)
       if code eq 0
         set appendwrite
         set wr_vecnames = FALSE

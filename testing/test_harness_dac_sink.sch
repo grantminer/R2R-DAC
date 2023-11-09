@@ -131,7 +131,7 @@ set wr_vecnames
     alter vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/dactut.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(V_i_in) i(VI_out_ladder) i(VI_dump) i(VI_out)
+    wrdata ~/Documents/dactut.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(net5) i(V_i_in) i(VI_out_ladder) i(VI_dump) i(VI_out)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE

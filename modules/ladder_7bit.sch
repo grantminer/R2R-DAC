@@ -166,18 +166,18 @@ C {devices/ipin.sym} 490 240 3 0 {name=p8 lab=b3}
 C {devices/ipin.sym} 640 240 3 0 {name=p9 lab=b2}
 C {devices/ipin.sym} 790 240 3 0 {name=p10 lab=b1}
 C {devices/ipin.sym} 940 240 3 0 {name=p11 lab=b0}
-C {./ladder_1bit.sym} -30 110 0 0 {name=x1}
-C {./inverter.sym} 30 240 0 0 {name=X8}
-C {./inverter.sym} 180 240 0 0 {name=X9}
-C {./inverter.sym} 330 240 0 0 {name=X10}
-C {./inverter.sym} 480 240 0 0 {name=X11}
-C {./inverter.sym} 630 240 0 0 {name=X12}
-C {./inverter.sym} 780 240 0 0 {name=X13}
-C {./inverter.sym} 930 240 0 0 {name=X14}
-C {./ladder_1bit.sym} 120 110 0 0 {name=x2}
-C {./ladder_1bit.sym} 270 110 0 0 {name=x3}
-C {./ladder_1bit.sym} 420 110 0 0 {name=x4}
-C {./ladder_1bit.sym} 570 110 0 0 {name=x5}
-C {./ladder_1bit.sym} 720 110 0 0 {name=x6}
-C {./ladder_1bit.sym} 870 110 0 0 {name=x7}
+C {../modules/ladder_1bit.sym} -30 110 0 0 {name=x1}
+C {../modules/inverter.sym} 30 240 0 0 {name=X8}
 C {devices/opin.sym} 1180 210 0 0 {name=p12 lab=Iout}
+C {../modules/ladder_1bit.sym} 120 110 0 0 {name=x2}
+C {../modules/ladder_1bit.sym} 270 110 0 0 {name=x3}
+C {../modules/ladder_1bit.sym} 420 110 0 0 {name=x4}
+C {../modules/ladder_1bit.sym} 570 110 0 0 {name=x5}
+C {../modules/ladder_1bit.sym} 720 110 0 0 {name=x6}
+C {../modules/ladder_1bit.sym} 870 110 0 0 {name=x7}
+C {../modules/inverter.sym} 180 240 0 0 {name=X9}
+C {../modules/inverter.sym} 330 240 0 0 {name=X10}
+C {../modules/inverter.sym} 480 240 0 0 {name=X11}
+C {../modules/inverter.sym} 630 240 0 0 {name=X12}
+C {../modules/inverter.sym} 780 240 0 0 {name=X13}
+C {../modules/inverter.sym} 930 240 0 0 {name=X14}
