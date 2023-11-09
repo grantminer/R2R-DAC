@@ -187,5 +187,5 @@ C {./ladder_1bit.sym} 570 110 0 0 {name=x5}
 C {./ladder_1bit.sym} 720 110 0 0 {name=x6}
 C {./ladder_1bit.sym} 870 110 0 0 {name=x7}
 C {devices/opin.sym} 1350 210 0 0 {name=p12 lab=Iout}
-C {/home/madvlsi/R2R-DAC/simple_mirror.sym} 1360 0 0 0 {name=x15}
-C {/home/madvlsi/R2R-DAC/simple_mirror.sym} 1330 210 0 0 {name=x16}
+C {./simple_mirror.sym} 1360 0 0 0 {name=x15}
+C {./simple_mirror.sym} 1330 210 0 0 {name=x16}
