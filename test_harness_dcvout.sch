@@ -93,7 +93,7 @@ value=".option wnflag=1
 C {madvlsi/ammeter1.sym} -30 -80 3 0 {name=Vin_amm}
 C {./bias_gen.sym} -360 -80 0 0 {name=x2}
 C {madvlsi/resistor.sym} -380 -70 0 0 {name=R1
-value=1k
+value=40k
 m=1}
 C {madvlsi/gnd.sym} -380 -40 0 0 {name=l14 lab=GND}
 C {madvlsi/ammeter1.sym} -170 -120 3 0 {name=Vin_amm1}
