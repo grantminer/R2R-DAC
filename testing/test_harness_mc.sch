@@ -135,7 +135,7 @@ C {devices/code.sym} 160 -140 0 0 {name=SPICE only_toplevel=false value=".contro
     let run = run + 1
   end
 .endc"}
-C {./ladder_7bit.sym} 260 -270 0 0 {name=x3}
+C {../modules/ladder_7bit.sym} 260 -270 0 0 {name=x3}
 C {madvlsi/vdd.sym} 260 -330 3 0 {name=l4 lab=VDD}
 C {madvlsi/ammeter1.sym} 450 -320 3 0 {name=VI_out_ladder}
 C {devices/lab_pin.sym} 260 -310 0 0 {name=p13 sig_type=std_logic lab=b6}
@@ -147,18 +147,18 @@ C {devices/lab_pin.sym} 260 -210 0 0 {name=p20 sig_type=std_logic lab=b1}
 C {devices/lab_pin.sym} 260 -190 0 0 {name=p21 sig_type=std_logic lab=b0}
 C {madvlsi/ammeter1.sym} 450 -230 3 0 {name=VI_dump}
 C {madvlsi/ammeter1.sym} 210 -350 3 0 {name=V_i_in}
-C {./bias_gen.sym} 50 -310 0 0 {name=x4}
+C {../modules/bias_gen.sym} 50 -310 0 0 {name=x4}
 C {madvlsi/resistor.sym} 30 -300 0 0 {name=R2
 value=10k
 m=1}
 C {madvlsi/gnd.sym} 30 -270 0 0 {name=l15 lab=GND}
-C {./output_sink.sym} 770 -270 0 0 {name=x5}
+C {../modules/output_sink.sym} 770 -270 0 0 {name=x5}
 C {madvlsi/vsource.sym} 970 -400 0 0 {name=Vb9
 value=0.5}
 C {madvlsi/vdd.sym} 970 -430 0 0 {name=l16 lab=VDD}
 C {madvlsi/ammeter1.sym} 970 -350 0 0 {name=VI_out}
-C {./bias_current_generator.sym} 300 -440 0 0 {name=x6}
-C {/home/madvlsi/Documents/R2R-DAC/simple_mirror_sink.sym} 990 -310 0 0 {name=x7}
+C {../modules/bias_current_generator.sym} 300 -440 0 0 {name=x6}
+C {../modules/simple_mirror_sink.sym} 990 -310 0 0 {name=x7}
 C {madvlsi/vsource.sym} 800 -100 0 0 {name=Vb0
 value=0}
 C {madvlsi/gnd.sym} 800 -70 0 0 {name=l2 lab=GND}

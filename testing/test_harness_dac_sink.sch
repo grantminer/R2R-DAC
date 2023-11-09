@@ -65,7 +65,7 @@ N 1040 -440 1040 -420 {
 lab=#net11}
 N 1040 -410 1040 -380 {
 lab=#net10}
-C {./ladder_7bit.sym} 330 -340 0 0 {name=x1}
+C {../modules/ladder_7bit.sym} 330 -340 0 0 {name=x1}
 C {madvlsi/vdd.sym} 330 -400 3 0 {name=l3 lab=VDD}
 C {madvlsi/ammeter1.sym} 520 -390 3 0 {name=VI_out_ladder}
 C {devices/lab_pin.sym} 330 -380 0 0 {name=p8 sig_type=std_logic lab=b6}
@@ -141,18 +141,18 @@ set wr_vecnames
 .endc"}
 C {madvlsi/ammeter1.sym} 520 -300 3 0 {name=VI_dump}
 C {madvlsi/ammeter1.sym} 280 -420 3 0 {name=V_i_in}
-C {./bias_gen.sym} 120 -380 0 0 {name=x2}
+C {../modules/bias_gen.sym} 120 -380 0 0 {name=x2}
 C {madvlsi/resistor.sym} 100 -370 0 0 {name=R1
 value=20k
 m=1}
 C {madvlsi/gnd.sym} 100 -340 0 0 {name=l14 lab=GND}
-C {./output_sink.sym} 840 -340 0 0 {name=x3}
+C {../modules/output_sink.sym} 840 -340 0 0 {name=x3}
 C {madvlsi/vsource.sym} 1040 -470 0 0 {name=Vb7
 value=0.5}
 C {madvlsi/vdd.sym} 1040 -500 0 0 {name=l1 lab=VDD}
 C {madvlsi/ammeter1.sym} 1040 -420 0 0 {name=VI_out}
-C {./bias_current_generator.sym} 370 -510 0 0 {name=x5}
-C {/home/madvlsi/Documents/R2R-DAC/simple_mirror_sink.sym} 1060 -380 0 0 {name=x4}
+C {../modules/bias_current_generator.sym} 370 -510 0 0 {name=x5}
+C {../modules/simple_mirror_sink.sym} 1060 -380 0 0 {name=x4}
 C {madvlsi/vsource.sym} 960 -130 0 0 {name=Vb0
 value=0}
 C {madvlsi/gnd.sym} 960 -100 0 0 {name=l2 lab=GND}
