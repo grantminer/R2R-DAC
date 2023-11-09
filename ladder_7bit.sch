@@ -70,67 +70,63 @@ lab=b0}
 N -50 -40 70 -40 {
 lab=Vgate}
 N 150 40 150 170 {
-lab=#net8}
+lab=Iout}
 N 150 170 1150 170 {
-lab=#net8}
+lab=Iout}
 N 150 20 160 20 {
-lab=#net9}
+lab=Idump}
 N 160 20 160 150 {
-lab=#net9}
+lab=Idump}
 N 160 150 1150 150 {
-lab=#net9}
+lab=Idump}
 N 300 40 300 170 {
-lab=#net8}
+lab=Iout}
 N 300 20 310 20 {
-lab=#net9}
+lab=Idump}
 N 310 20 310 150 {
-lab=#net9}
+lab=Idump}
 N 450 40 450 170 {
-lab=#net8}
+lab=Iout}
 N 450 20 460 20 {
-lab=#net9}
+lab=Idump}
 N 460 20 460 150 {
-lab=#net9}
+lab=Idump}
 N 600 40 600 170 {
-lab=#net8}
+lab=Iout}
 N 600 20 610 20 {
-lab=#net9}
+lab=Idump}
 N 610 20 610 150 {
-lab=#net9}
+lab=Idump}
 N 750 40 750 170 {
-lab=#net8}
+lab=Iout}
 N 750 20 760 20 {
-lab=#net9}
+lab=Idump}
 N 760 20 760 150 {
-lab=#net9}
+lab=Idump}
 N 900 40 900 170 {
-lab=#net8}
+lab=Iout}
 N 900 20 910 20 {
-lab=#net9}
+lab=Idump}
 N 910 20 910 150 {
-lab=#net9}
+lab=Idump}
 N 1050 40 1050 170 {
-lab=#net8}
+lab=Iout}
 N 1050 20 1060 20 {
-lab=#net9}
+lab=Idump}
 N 1060 20 1060 150 {
-lab=#net9}
+lab=Idump}
 N -50 0 -0 0 {
 lab=Iin}
 N 1110 0 1110 150 {
-lab=#net9}
-N 1150 0 1150 150 {
-lab=#net9}
-N 1150 0 1180 0 {
-lab=#net9}
-N 1150 170 1150 210 {
-lab=#net8}
-N 1150 210 1180 210 {
-lab=#net8}
-N 1300 210 1360 210 {
-lab=Iout}
-N 1300 0 1390 -0 {
 lab=Idump}
+N 1150 0 1150 150 {
+lab=Idump}
+N 1150 0 1180 0 {
+lab=Idump}
+N 1150 170 1150 210 {
+lab=Iout}
+N 1150 210 1180 210 {
+lab=Iout}
 C {madvlsi/nmos3.sym} 1080 0 1 0 {name=M1
 L=4
 W=12
@@ -160,7 +156,7 @@ C {madvlsi/vdd.sym} 820 210 0 0 {name=l11 lab=VDD}
 C {madvlsi/gnd.sym} 820 270 0 0 {name=l12 lab=GND}
 C {madvlsi/vdd.sym} 970 210 0 0 {name=l13 lab=VDD}
 C {madvlsi/gnd.sym} 970 270 0 0 {name=l14 lab=GND}
-C {devices/opin.sym} 1390 0 0 0 {name=p1 lab=Idump}
+C {devices/opin.sym} 1180 0 0 0 {name=p1 lab=Idump}
 C {devices/ipin.sym} -50 -40 0 0 {name=p3 lab=Vgate}
 C {devices/ipin.sym} -50 0 0 0 {name=p4 lab=Iin}
 C {devices/ipin.sym} 40 240 3 0 {name=p5 lab=b6}
@@ -184,6 +180,4 @@ C {./ladder_1bit.sym} 420 110 0 0 {name=x4}
 C {./ladder_1bit.sym} 570 110 0 0 {name=x5}
 C {./ladder_1bit.sym} 720 110 0 0 {name=x6}
 C {./ladder_1bit.sym} 870 110 0 0 {name=x7}
-C {devices/opin.sym} 1360 210 0 0 {name=p12 lab=Iout}
-C {/home/madvlsi/R2R-DAC/simple_mirror.sym} 1330 0 0 0 {name=x15}
-C {/home/madvlsi/R2R-DAC/simple_mirror.sym} 1330 210 0 0 {name=x16}
+C {devices/opin.sym} 1180 210 0 0 {name=p12 lab=Iout}

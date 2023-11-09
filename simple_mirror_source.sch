@@ -56,8 +56,8 @@ spiceprefix=X
 C {madvlsi/gnd.sym} 30 80 0 0 {name=l17 lab=GND}
 C {madvlsi/gnd.sym} 100 80 0 0 {name=l18 lab=GND}
 C {madvlsi/pmos3.sym} 100 -40 0 1 {name=M8
-L=4
-W=12
+L=8
+W=24
 body=VDD
 nf=1
 mult=1
@@ -71,8 +71,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 180 -40 0 0 {name=M9
-L=4
-W=12
+L=8
+W=24
 body=VDD
 nf=1
 mult=1
