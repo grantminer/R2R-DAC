@@ -19,14 +19,6 @@ N -230 -80 -230 -60 {
 lab=#net6}
 N -230 -80 -190 -80 {
 lab=#net6}
-N 230 -50 240 -50 {
-lab=#net2}
-N 240 -50 240 20 {
-lab=#net2}
-N 240 20 360 20 {
-lab=#net2}
-N 230 40 360 40 {
-lab=#net4}
 C {./ladder_7bit.sym} 0 0 0 0 {name=x1}
 C {madvlsi/vdd.sym} 0 -60 3 0 {name=l3 lab=VDD}
 C {madvlsi/ammeter1.sym} 190 -50 3 0 {name=Vmeas}
@@ -125,7 +117,7 @@ set wr_vecnames
     alter vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/dactut.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(V_i_in) i(Vmeas) i(Vmeas1) i(Vmeas2)
+    wrdata ~/Documents/dactut.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(V_i_in) i(Vmeas) i(Vmeas1)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -133,6 +125,12 @@ set wr_vecnames
     let code = code + 1
   end
 .endc"}
+C {madvlsi/vsource.sym} 230 -20 0 0 {name=Vb7
+value=0.5}
+C {madvlsi/vsource.sym} 230 70 0 0 {name=Vb8
+value=0.5}
+C {madvlsi/gnd.sym} 230 10 0 0 {name=l1 lab=GND}
+C {madvlsi/gnd.sym} 230 100 0 0 {name=l5 lab=GND}
 C {madvlsi/ammeter1.sym} 190 40 3 0 {name=Vmeas1}
 C {madvlsi/ammeter1.sym} -50 -80 3 0 {name=V_i_in}
 C {./bias_gen.sym} -210 -40 0 0 {name=x2}
