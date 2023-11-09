@@ -27,37 +27,95 @@ N 240 20 360 20 {
 lab=#net2}
 N 230 40 360 40 {
 lab=#net4}
+N 310 -20 360 -20 {
+lab=#net7}
+N -50 -60 -30 -60 {
+lab=#net8}
+N -30 -150 -30 -60 {
+lab=#net8}
+N -30 -150 270 -150 {
+lab=#net8}
+N 270 -150 320 -150 {
+lab=#net8}
+N 320 -150 320 -40 {
+lab=#net8}
+N 320 -40 360 -40 {
+lab=#net8}
+N 280 -0 360 0 {
+lab=#net9}
+N 740 -90 750 -90 {
+lab=#net10}
+N 240 -210 260 -210 {
+lab=#net9}
+N 260 -210 260 0 {
+lab=#net9}
+N 260 0 280 0 {
+lab=#net9}
+N 240 -230 280 -230 {
+lab=#net7}
+N 280 -230 280 -20 {
+lab=#net7}
+N 280 -20 310 -20 {
+lab=#net7}
+N 20 -230 50 -230 {
+lab=#net8}
+N 20 -230 20 -150 {
+lab=#net8}
+N 710 -70 740 -70 {
+lab=#net10}
+N 710 -70 710 -40 {
+lab=#net10}
+N 700 -40 710 -40 {
+lab=#net10}
+N 670 -100 670 -70 {
+lab=#net11}
+N 630 -100 670 -100 {
+lab=#net11}
+N 630 -130 630 -100 {
+lab=#net11}
+N 630 -130 640 -130 {
+lab=#net11}
+N 620 -130 630 -130 {
+lab=#net11}
+N 740 -90 740 -70 {
+lab=#net10}
+N 580 -40 590 -40 {
+lab=#net12}
+N 590 -100 590 -80 {
+lab=#net13}
+N 590 -70 590 -40 {
+lab=#net12}
 C {./ladder_7bit.sym} 0 0 0 0 {name=x1}
 C {madvlsi/vdd.sym} 0 -60 3 0 {name=l3 lab=VDD}
-C {madvlsi/ammeter1.sym} 190 -50 3 0 {name=Vmeas}
-C {madvlsi/vsource.sym} 1280 190 0 0 {name=Vb0
+C {madvlsi/ammeter1.sym} 190 -50 3 0 {name=Vmeas_i_out_ladder}
+C {madvlsi/vsource.sym} 1410 -150 0 0 {name=Vb0
 value=0}
-C {madvlsi/gnd.sym} 1280 220 0 0 {name=l2 lab=GND}
-C {devices/lab_pin.sym} 1280 160 1 0 {name=p1 sig_type=std_logic lab=b0}
-C {madvlsi/vsource.sym} 1280 60 0 0 {name=Vb1
+C {madvlsi/gnd.sym} 1410 -120 0 0 {name=l2 lab=GND}
+C {devices/lab_pin.sym} 1410 -180 1 0 {name=p1 sig_type=std_logic lab=b0}
+C {madvlsi/vsource.sym} 1410 -280 0 0 {name=Vb1
 value=0}
-C {madvlsi/gnd.sym} 1280 90 0 0 {name=l6 lab=GND}
-C {devices/lab_pin.sym} 1280 30 1 0 {name=p2 sig_type=std_logic lab=b1}
-C {madvlsi/vsource.sym} 1280 -80 0 0 {name=Vb2
+C {madvlsi/gnd.sym} 1410 -250 0 0 {name=l6 lab=GND}
+C {devices/lab_pin.sym} 1410 -310 1 0 {name=p2 sig_type=std_logic lab=b1}
+C {madvlsi/vsource.sym} 1410 -420 0 0 {name=Vb2
 value=0}
-C {madvlsi/gnd.sym} 1280 -50 0 0 {name=l7 lab=GND}
-C {devices/lab_pin.sym} 1280 -110 1 0 {name=p3 sig_type=std_logic lab=b2}
-C {madvlsi/vsource.sym} 1050 60 0 0 {name=Vb3
+C {madvlsi/gnd.sym} 1410 -390 0 0 {name=l7 lab=GND}
+C {devices/lab_pin.sym} 1410 -450 1 0 {name=p3 sig_type=std_logic lab=b2}
+C {madvlsi/vsource.sym} 1180 -280 0 0 {name=Vb3
 value=0}
-C {madvlsi/gnd.sym} 1050 90 0 0 {name=l8 lab=GND}
-C {devices/lab_pin.sym} 1050 30 1 0 {name=p4 sig_type=std_logic lab=b3}
-C {madvlsi/vsource.sym} 1050 -80 0 0 {name=Vb4
+C {madvlsi/gnd.sym} 1180 -250 0 0 {name=l8 lab=GND}
+C {devices/lab_pin.sym} 1180 -310 1 0 {name=p4 sig_type=std_logic lab=b3}
+C {madvlsi/vsource.sym} 1180 -420 0 0 {name=Vb4
 value=0}
-C {madvlsi/gnd.sym} 1050 -50 0 0 {name=l9 lab=GND}
-C {devices/lab_pin.sym} 1050 -110 1 0 {name=p5 sig_type=std_logic lab=b4}
-C {madvlsi/vsource.sym} 820 60 0 0 {name=Vb5
+C {madvlsi/gnd.sym} 1180 -390 0 0 {name=l9 lab=GND}
+C {devices/lab_pin.sym} 1180 -450 1 0 {name=p5 sig_type=std_logic lab=b4}
+C {madvlsi/vsource.sym} 950 -280 0 0 {name=Vb5
 value=0}
-C {madvlsi/gnd.sym} 820 90 0 0 {name=l10 lab=GND}
-C {devices/lab_pin.sym} 820 30 1 0 {name=p6 sig_type=std_logic lab=b5}
-C {madvlsi/vsource.sym} 820 -80 0 0 {name=Vb6
+C {madvlsi/gnd.sym} 950 -250 0 0 {name=l10 lab=GND}
+C {devices/lab_pin.sym} 950 -310 1 0 {name=p6 sig_type=std_logic lab=b5}
+C {madvlsi/vsource.sym} 950 -420 0 0 {name=Vb6
 value=0}
-C {madvlsi/gnd.sym} 820 -50 0 0 {name=l11 lab=GND}
-C {devices/lab_pin.sym} 820 -110 1 0 {name=p7 sig_type=std_logic lab=b6}
+C {madvlsi/gnd.sym} 950 -390 0 0 {name=l11 lab=GND}
+C {devices/lab_pin.sym} 950 -450 1 0 {name=p7 sig_type=std_logic lab=b6}
 C {devices/lab_pin.sym} 0 -40 0 0 {name=p8 sig_type=std_logic lab=b6}
 C {devices/lab_pin.sym} 0 -20 0 0 {name=p9 sig_type=std_logic lab=b5}
 C {devices/lab_pin.sym} 0 0 0 0 {name=p10 sig_type=std_logic lab=b4}
@@ -65,11 +123,11 @@ C {devices/lab_pin.sym} 0 20 0 0 {name=p11 sig_type=std_logic lab=b3}
 C {devices/lab_pin.sym} 0 40 0 0 {name=p12 sig_type=std_logic lab=b2}
 C {devices/lab_pin.sym} 0 60 0 0 {name=p14 sig_type=std_logic lab=b1}
 C {devices/lab_pin.sym} 0 80 0 0 {name=p15 sig_type=std_logic lab=b0}
-C {madvlsi/vsource.sym} 910 200 0 0 {name=V1
+C {madvlsi/vsource.sym} 1040 -140 0 0 {name=V1
 value=1.8}
-C {madvlsi/gnd.sym} 910 230 0 0 {name=l12 lab=GND}
-C {madvlsi/vdd.sym} 910 170 0 0 {name=l13 lab=VDD}
-C {madvlsi/tt_models.sym} 650 -110 0 0 {
+C {madvlsi/gnd.sym} 1040 -110 0 0 {name=l12 lab=GND}
+C {madvlsi/vdd.sym} 1040 -170 0 0 {name=l13 lab=VDD}
+C {madvlsi/tt_models.sym} 780 -450 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
@@ -125,7 +183,7 @@ set wr_vecnames
     alter vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/dactut.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(V_i_in) i(Vmeas) i(Vmeas1) i(Vmeas2)
+    wrdata ~/Documents/dactut.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(V_i_in) i(Vmeas_i_out_ladder) i(Vmeas_dump) i(Vmeas_i_out) i(Vmeas_i_mirror)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -133,10 +191,81 @@ set wr_vecnames
     let code = code + 1
   end
 .endc"}
-C {madvlsi/ammeter1.sym} 190 40 3 0 {name=Vmeas1}
+C {madvlsi/ammeter1.sym} 190 40 3 0 {name=Vmeas_dump}
 C {madvlsi/ammeter1.sym} -50 -80 3 0 {name=V_i_in}
 C {./bias_gen.sym} -210 -40 0 0 {name=x2}
 C {madvlsi/resistor.sym} -230 -30 0 0 {name=R1
 value=20k
 m=1}
 C {madvlsi/gnd.sym} -230 0 0 0 {name=l14 lab=GND}
+C {/home/madvlsi/Documents/R2R-DAC/output_sink.sym} 510 0 0 0 {name=x3}
+C {madvlsi/vsource.sym} 760 -120 0 0 {name=Vb7
+value=0.5}
+C {madvlsi/vdd.sym} 760 -150 0 0 {name=l1 lab=VDD}
+C {madvlsi/ammeter1.sym} 590 -80 0 0 {name=Vmeas_i_out}
+C {./bias_current_generator.sym} 40 -170 0 0 {name=x5}
+C {madvlsi/nmos3.sym} 740 -40 2 1 {name=M4
+L=4
+W=12
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} 670 -40 2 0 {name=M5
+L=4
+W=12
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/gnd.sym} 740 -10 0 1 {name=l17 lab=GND}
+C {madvlsi/gnd.sym} 670 -10 0 1 {name=l18 lab=GND}
+C {madvlsi/pmos3.sym} 670 -130 0 0 {name=M8
+L=4
+W=12
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} 590 -130 0 1 {name=M9
+L=4
+W=12
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/vdd.sym} 670 -160 0 1 {name=l19 lab=VDD}
+C {madvlsi/vdd.sym} 590 -160 0 1 {name=l20 lab=VDD}
+C {madvlsi/ammeter1.sym} 760 -90 1 0 {name=Vmeas_i_mirror}
