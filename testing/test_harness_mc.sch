@@ -73,7 +73,7 @@ value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {devices/code.sym} 160 -140 0 0 {name=SPICE only_toplevel=false value=".control
-  let runs = 2
+  let runs = 10
   let run = 1
   while run <= runs
     set appendwrite = FALSE
@@ -124,7 +124,7 @@ C {devices/code.sym} 160 -140 0 0 {name=SPICE only_toplevel=false value=".contro
       alter vb6 1.8*$&b6
       save all
       op
-      wrdata ../simulation/mc/mcdac\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(net5) i(V_i_in) i(VI_out)
+      wrdata ~/Documents/R2R-DAC/simulation/mc/mcdac\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(net5) i(V_i_in) i(VI_out)
       if code eq 0
         set appendwrite
         set wr_vecnames = FALSE
