@@ -15,9 +15,9 @@ N 460 -230 490 -230 {
 lab=#net4}
 N 220 -350 260 -350 {
 lab=#net5}
-N 30 -350 30 -330 {
+N -290 -350 -290 -330 {
 lab=#net6}
-N 30 -350 70 -350 {
+N -290 -350 -250 -350 {
 lab=#net6}
 N 490 -320 500 -320 {
 lab=#net2}
@@ -29,7 +29,7 @@ N 490 -230 620 -230 {
 lab=#net4}
 N 570 -290 620 -290 {
 lab=#net7}
-N 210 -330 230 -330 {
+N -110 -330 230 -330 {
 lab=#net8}
 N 230 -420 230 -330 {
 lab=#net8}
@@ -65,6 +65,15 @@ N 970 -370 970 -350 {
 lab=#net11}
 N 970 -340 970 -310 {
 lab=#net10}
+N -40 -380 -40 -350 {
+lab=#net12}
+N -110 -350 -40 -350 {
+lab=#net12}
+N 80 -380 80 -350 {
+lab=Vin}
+N 80 -350 210 -350 {
+lab=Vin}
+N -40 -380 80 -380 {}
 C {madvlsi/tt_models.sym} 30 -140 0 0 {
 name=TT_MODELS
 only_toplevel=false
@@ -73,7 +82,7 @@ value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {devices/code.sym} 160 -140 0 0 {name=SPICE only_toplevel=false value=".control
-  let runs = 10
+  let runs = 1
   let run = 1
   while run <= runs
     set appendwrite = FALSE
@@ -124,7 +133,7 @@ C {devices/code.sym} 160 -140 0 0 {name=SPICE only_toplevel=false value=".contro
       alter vb6 1.8*$&b6
       save all
       op
-      wrdata ~/Documents/R2R-DAC/simulation/mc/mcdac\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(net5) i(V_i_in) i(VI_out)
+      wrdata ~/Documents/R2R-DAC/simulation/mc/mcdac\{$&run\}.txt i(V_i_in) i(VI_out) v(Vin)
       if code eq 0
         set appendwrite
         set wr_vecnames = FALSE
@@ -147,11 +156,11 @@ C {devices/lab_pin.sym} 260 -210 0 0 {name=p20 sig_type=std_logic lab=b1}
 C {devices/lab_pin.sym} 260 -190 0 0 {name=p21 sig_type=std_logic lab=b0}
 C {madvlsi/ammeter1.sym} 450 -230 3 0 {name=VI_dump}
 C {madvlsi/ammeter1.sym} 210 -350 3 0 {name=V_i_in}
-C {../modules/bias_gen.sym} 50 -310 0 0 {name=x4}
-C {madvlsi/resistor.sym} 30 -300 0 0 {name=R2
+C {../modules/bias_gen.sym} -270 -310 0 0 {name=x4}
+C {madvlsi/resistor.sym} -290 -300 0 0 {name=R2
 value=10k
 m=1}
-C {madvlsi/gnd.sym} 30 -270 0 0 {name=l15 lab=GND}
+C {madvlsi/gnd.sym} -290 -270 0 0 {name=l15 lab=GND}
 C {../modules/output_sink.sym} 770 -270 0 0 {name=x5}
 C {madvlsi/vsource.sym} 970 -400 0 0 {name=Vb9
 value=0.5}
@@ -191,3 +200,5 @@ C {madvlsi/vsource.sym} 870 -100 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/vdd.sym} 870 -130 0 0 {name=l10 lab=VDD}
 C {madvlsi/gnd.sym} 870 -70 0 0 {name=l11 lab=GND}
+C {/home/madvlsi/Documents/R2R-DAC/modules/simple_mirror_source.sym} 100 -440 0 0 {name=x2}
+C {devices/lab_pin.sym} 170 -350 1 0 {name=p8 sig_type=std_logic lab=Vin}
