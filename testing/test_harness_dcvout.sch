@@ -5,66 +5,70 @@ K {}
 V {}
 S {}
 E {}
-N 650 -50 690 -50 {
-lab=#net1}
-N 630 -50 650 -50 {
-lab=#net1}
 N 80 -60 100 -60 {
-lab=#net2}
+lab=#net1}
 N 110 -60 140 -60 {
-lab=#net3}
+lab=#net2}
 N 80 30 100 30 {
-lab=#net4}
+lab=#net3}
 N 110 30 140 30 {
-lab=#net5}
+lab=#net4}
 N -130 -90 -90 -90 {
-lab=#net6}
+lab=#net5}
 N -320 -90 -320 -70 {
-lab=#net7}
+lab=#net6}
 N -320 -90 -280 -90 {
-lab=#net7}
+lab=#net6}
 N 140 -60 150 -60 {
-lab=#net3}
+lab=#net2}
 N 150 -220 170 -220 {
-lab=#net8}
+lab=#net7}
 N 150 -240 190 -240 {
-lab=#net9}
+lab=#net8}
 N -70 -240 -40 -240 {
-lab=#net10}
+lab=#net9}
 N -70 -240 -70 -160 {
-lab=#net10}
+lab=#net9}
 N 150 -60 150 10 {
-lab=#net3}
+lab=#net2}
 N 150 10 220 10 {
-lab=#net3}
+lab=#net2}
 N 140 30 150 30 {
-lab=#net5}
+lab=#net4}
 N 150 30 220 30 {
-lab=#net5}
+lab=#net4}
 N 180 -10 220 -10 {
-lab=#net8}
+lab=#net7}
 N 180 -220 180 -10 {
-lab=#net8}
+lab=#net7}
 N 170 -220 180 -220 {
-lab=#net8}
+lab=#net7}
 N -140 -70 -120 -70 {
-lab=#net10}
+lab=#net9}
 N -120 -160 -120 -70 {
-lab=#net10}
+lab=#net9}
 N -120 -160 -70 -160 {
-lab=#net10}
+lab=#net9}
 N 190 -240 190 -30 {
-lab=#net9}
+lab=#net8}
 N 190 -30 220 -30 {
-lab=#net9}
+lab=#net8}
 N -70 -160 200 -160 {
-lab=#net10}
+lab=#net9}
 N 200 -160 200 -50 {
-lab=#net10}
+lab=#net9}
 N 200 -50 220 -50 {
+lab=#net9}
+N 440 -100 440 -70 {
+lab=#net8}
+N 190 -240 440 -240 {
+lab=#net8}
+N 440 -240 440 -100 {
+lab=#net8}
+N 580 -70 590 -70 {
 lab=#net10}
-N 440 -50 490 -50 {
-lab=#net11}
+N 590 -70 590 -60 {
+lab=#net10}
 C {madvlsi/vsource.sym} 280 220 0 0 {name=Vb0
 value=1.8}
 C {madvlsi/gnd.sym} 280 250 0 0 {name=l1 lab=GND}
@@ -93,9 +97,6 @@ C {madvlsi/vsource.sym} -140 220 0 0 {name=Vb6
 value=1.8}
 C {madvlsi/gnd.sym} -140 250 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} -140 190 1 0 {name=p7 sig_type=std_logic lab=b6}
-C {madvlsi/vsource.sym} 690 -80 0 0 {name=Vout
-value=0}
-C {madvlsi/ammeter1.sym} 620 -50 3 0 {name=Vout_amm}
 C {devices/code_shown.sym} 560 220 0 0 {name=SPICE1 only_toplevel=false value=".dc Vout 0 1.8 0.01
 .save all"
 .control
@@ -132,6 +133,8 @@ C {madvlsi/gnd.sym} -320 -10 0 0 {name=l14 lab=GND}
 C {../modules/bias_current_generator.sym} -50 -180 0 0 {name=x5}
 C {../modules/output_sink.sym} 370 -10 0 0 {name=x3}
 C {devices/lab_pin.sym} -90 70 0 0 {name=p13 sig_type=std_logic lab=b0}
-C {../modules/simple_mirror_sink.sym} 650 -50 0 0 {name=x4}
-C {madvlsi/vdd.sym} 690 -110 0 0 {name=l8 lab=VDD}
-C {madvlsi/ammeter1.sym} 490 -50 3 0 {name=Vout_amm1}
+C {madvlsi/vsource.sym} 590 -20 0 0 {name=Vout
+value=0.5}
+C {madvlsi/ammeter1.sym} 590 -60 0 0 {name=VI_out}
+C {/home/madvlsi/Documents/R2R-DAC/modules/cascode_current_mirror.sym} 430 -60 0 0 {name=x7}
+C {madvlsi/gnd.sym} 590 10 0 0 {name=l8 lab=GND}

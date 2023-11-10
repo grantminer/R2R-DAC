@@ -59,21 +59,25 @@ N 280 -500 310 -500 {
 lab=#net8}
 N 280 -500 280 -420 {
 lab=#net8}
-N 960 -310 970 -310 {
-lab=#net10}
-N 970 -370 970 -350 {
-lab=#net11}
-N 970 -340 970 -310 {
-lab=#net10}
 N -40 -380 -40 -350 {
-lab=#net12}
+lab=Vin}
 N -110 -350 -40 -350 {
-lab=#net12}
+lab=Vin}
 N 80 -380 80 -350 {
 lab=Vin}
 N 80 -350 210 -350 {
 lab=Vin}
-N -40 -380 80 -380 {}
+N -40 -380 80 -380 {
+lab=Vin}
+N 980 -330 990 -330 {
+lab=#net10}
+N 990 -390 990 -370 {
+lab=#net11}
+N 990 -360 990 -330 {
+lab=#net10}
+N 520 -480 840 -480 {
+lab=#net12}
+N 840 -480 840 -330 {}
 C {madvlsi/tt_models.sym} 30 -140 0 0 {
 name=TT_MODELS
 only_toplevel=false
@@ -162,12 +166,7 @@ value=10k
 m=1}
 C {madvlsi/gnd.sym} -290 -270 0 0 {name=l15 lab=GND}
 C {../modules/output_sink.sym} 770 -270 0 0 {name=x5}
-C {madvlsi/vsource.sym} 970 -400 0 0 {name=Vb9
-value=0.5}
-C {madvlsi/vdd.sym} 970 -430 0 0 {name=l16 lab=VDD}
-C {madvlsi/ammeter1.sym} 970 -350 0 0 {name=VI_out}
 C {../modules/bias_current_generator.sym} 300 -440 0 0 {name=x6}
-C {../modules/simple_mirror_sink.sym} 990 -310 0 0 {name=x7}
 C {madvlsi/vsource.sym} 800 -100 0 0 {name=Vb0
 value=0}
 C {madvlsi/gnd.sym} 800 -70 0 0 {name=l2 lab=GND}
@@ -200,5 +199,9 @@ C {madvlsi/vsource.sym} 870 -100 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/vdd.sym} 870 -130 0 0 {name=l10 lab=VDD}
 C {madvlsi/gnd.sym} 870 -70 0 0 {name=l11 lab=GND}
-C {/home/madvlsi/Documents/R2R-DAC/modules/simple_mirror_source.sym} 100 -440 0 0 {name=x2}
 C {devices/lab_pin.sym} 170 -350 1 0 {name=p8 sig_type=std_logic lab=Vin}
+C {madvlsi/vsource.sym} 990 -420 0 0 {name=Vb7
+value=0.5}
+C {madvlsi/vdd.sym} 990 -450 0 0 {name=l3 lab=VDD}
+C {madvlsi/ammeter1.sym} 990 -370 0 0 {name=VI_out8}
+C {/home/madvlsi/Documents/R2R-DAC/modules/cascode_current_mirror.sym} 830 -320 0 0 {name=x2}
