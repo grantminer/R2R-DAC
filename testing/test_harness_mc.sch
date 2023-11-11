@@ -71,13 +71,14 @@ N -40 -380 80 -380 {
 lab=Vin}
 N 980 -330 990 -330 {
 lab=#net10}
-N 990 -390 990 -370 {
-lab=#net11}
-N 990 -360 990 -330 {
+N 840 -480 840 -330 {
+lab=#net7}
+N 990 -330 990 -290 {
 lab=#net10}
-N 520 -480 840 -480 {
-lab=#net12}
-N 840 -480 840 -330 {}
+N 540 -500 840 -500 {
+lab=#net7}
+N 840 -500 840 -480 {
+lab=#net7}
 C {madvlsi/tt_models.sym} 30 -140 0 0 {
 name=TT_MODELS
 only_toplevel=false
@@ -86,7 +87,7 @@ value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {devices/code.sym} 160 -140 0 0 {name=SPICE only_toplevel=false value=".control
-  let runs = 1
+  let runs = 10
   let run = 1
   while run <= runs
     set appendwrite = FALSE
@@ -200,8 +201,8 @@ value=1.8}
 C {madvlsi/vdd.sym} 870 -130 0 0 {name=l10 lab=VDD}
 C {madvlsi/gnd.sym} 870 -70 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 170 -350 1 0 {name=p8 sig_type=std_logic lab=Vin}
-C {madvlsi/vsource.sym} 990 -420 0 0 {name=Vb7
-value=0.5}
-C {madvlsi/vdd.sym} 990 -450 0 0 {name=l3 lab=VDD}
-C {madvlsi/ammeter1.sym} 990 -370 0 0 {name=VI_out8}
+C {madvlsi/vsource.sym} 990 -250 0 0 {name=Vb7
+value=0.1}
+C {madvlsi/ammeter1.sym} 990 -290 0 0 {name=VI_out}
 C {/home/madvlsi/Documents/R2R-DAC/modules/cascode_current_mirror.sym} 830 -320 0 0 {name=x2}
+C {madvlsi/gnd.sym} 990 -220 0 0 {name=l3 lab=GND}
