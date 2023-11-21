@@ -19,8 +19,6 @@ N 220 -140 220 -70 {
 lab=B}
 N 300 -140 300 -70 {
 lab=B_bar}
-N 320 -330 420 -330 {
-lab=Iin_out}
 N 180 -300 180 -240 {
 lab=#net1}
 N 240 -330 260 -330 {
@@ -49,6 +47,10 @@ N 260 -200 260 -170 {
 lab=#net1}
 N 250 -200 260 -200 {
 lab=#net1}
+N 320 -420 320 -330 {
+lab=#net2}
+N 320 -420 330 -420 {
+lab=#net2}
 C {madvlsi/nmos3.sym} 210 -330 3 0 {name=M5
 L=4
 W=12
@@ -113,6 +115,6 @@ C {devices/ipin.sym} 90 -420 0 0 {name=p8 lab=Iin_in}
 C {devices/ipin.sym} 80 -270 0 0 {name=p9 lab=Vg}
 C {devices/ipin.sym} 220 -70 3 0 {name=p10 lab=B}
 C {devices/ipin.sym} 300 -70 3 0 {name=p11 lab=B_bar}
-C {devices/opin.sym} 420 -330 0 0 {name=p12 lab=Iin_out}
+C {devices/opin.sym} 330 -420 0 0 {name=p12 lab=Iin_out}
 C {devices/opin.sym} 420 -130 0 0 {name=p13 lab=I_dump}
 C {devices/opin.sym} 420 -100 0 0 {name=p14 lab=Iout}
