@@ -198,7 +198,7 @@ C {madvlsi/resistor.sym} -230 -30 0 0 {name=R1
 value=20k
 m=1}
 C {madvlsi/gnd.sym} -230 0 0 0 {name=l14 lab=GND}
-C {/home/madvlsi/Documents/R2R-DAC/output_sink.sym} 510 0 0 0 {name=x3}
+C {./output_sink.sym} 510 0 0 0 {name=x3}
 C {madvlsi/vsource.sym} 760 -120 0 0 {name=Vb7
 value=0.5}
 C {madvlsi/vdd.sym} 760 -150 0 0 {name=l1 lab=VDD}
