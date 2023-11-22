@@ -204,5 +204,5 @@ C {devices/lab_pin.sym} 170 -350 1 0 {name=p8 sig_type=std_logic lab=Vin}
 C {madvlsi/vsource.sym} 990 -250 0 0 {name=Vb7
 value=0.1}
 C {madvlsi/ammeter1.sym} 990 -290 0 0 {name=VI_out}
-C {/home/madvlsi/Documents/R2R-DAC/modules/cascode_current_mirror.sym} 830 -320 0 0 {name=x2}
+C {../modules/cascode_current_mirror.sym} 830 -320 0 0 {name=x2}
 C {madvlsi/gnd.sym} 990 -220 0 0 {name=l3 lab=GND}
