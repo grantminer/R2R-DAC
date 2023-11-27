@@ -1,0 +1,16 @@
+magic
+tech sky130A
+timestamp 1701111668
+use bias_gen_resistor  bias_gen_resistor_0
+timestamp 1701110497
+transform 1 0 -812 0 1 -961
+box 25 355 5705 6375
+use bias_generator_cascode  bias_generator_cascode_0
+timestamp 1701111668
+transform 1 0 5092 0 1 -1171
+box -200 445 3085 3260
+use output_sink  output_sink_0
+timestamp 1701111590
+transform 1 0 7576 0 1 -3911
+box 600 -2310 3003 6000
+<< end >>
