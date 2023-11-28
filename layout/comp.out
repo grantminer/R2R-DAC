@@ -1,0 +1,37 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell bias_current_generator_lds in circuit ../top_level.spice (0)(1 instance)
+Flattening unmatched subcell cascode_mirror_lds in circuit ../top_level.spice (0)(1 instance)
+Flattening unmatched subcell ladder_lds in circuit ../top_level.spice (0)(1 instance)
+Flattening unmatched subcell output_sink_lds in circuit ../top_level.spice (0)(1 instance)
+Flattening unmatched subcell bias_gen_lds in circuit ../top_level.spice (0)(1 instance)
+Flattening unmatched subcell cascode_mirror in circuit top_level.spice (1)(1 instance)
+Flattening unmatched subcell bias_gen_resistor in circuit top_level.spice (1)(1 instance)
+Flattening unmatched subcell output_sink in circuit top_level.spice (1)(1 instance)
+Flattening unmatched subcell bias_generator_cascode in circuit top_level.spice (1)(1 instance)
+Flattening unmatched subcell ladder_7bit in circuit top_level.spice (1)(1 instance)
+
+Class ../top_level.spice (0):  Merged 17 parallel devices.
+Class top_level.spice (1):  Merged 17 parallel devices.
+Subcircuit summary:
+Circuit 1: ../top_level.spice              |Circuit 2: top_level.spice                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (70->61)           |sky130_fd_pr__pfet_01v8 (70->61)           
+sky130_fd_pr__nfet_01v8 (118->110)         |sky130_fd_pr__nfet_01v8 (118->110)         
+Number of devices: 171                     |Number of devices: 171                     
+Number of nets: 115                        |Number of nets: 115                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 135 symmetries.
+Cells have no pins;  pin matching not needed.
+Device classes ../top_level.spice and top_level.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.
